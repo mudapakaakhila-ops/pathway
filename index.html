@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathway After 10 — Explore Your Interests. Discover What Comes Next.</title>
+  <meta name="description" content="Help students in India choose what to study after Class 10. Explore Intermediate (MPC, BiPC, CEC, MEC, Arts), 3-year Polytechnic Diplomas, ITI Trades, and recognized integrated pathways.">
+  <meta name="keywords" content="After 10th courses in India, Intermediate MPC BiPC CEC MEC, Polytechnic Diploma SBTET, ITI trades NCVT, RGUKT Basar, Class 10 guidance">
+  <meta name="author" content="Pathway After 10 Initiative">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/roadmap.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Ambient Dynamic Orbs -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="header-nav" role="banner">
+    <div class="container header-container">
+      <a href="#home" class="logo-wrapper" id="nav-logo" aria-label="Pathway After 10 Home">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title" id="txt-app-name">Pathway After 10</span>
+          <span class="logo-badge" id="txt-app-tagline">Student Guidance</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links" id="main-nav-links">
+          <li><button class="nav-link-btn active" data-view="home" id="nav-btn-home">Home</button></li>
+          <li><button class="nav-link-btn" data-view="quiz" id="nav-btn-quiz">Find My Path</button></li>
+          <li><button class="nav-link-btn" data-view="explore" id="nav-btn-explore">Explore Pathways</button></li>
+          <li><button class="nav-link-btn" data-view="recommendations" id="nav-btn-recom">Recommendations</button></li>
+          <li><button class="nav-link-btn" data-view="compare" id="nav-btn-compare">Compare</button></li>
+          <li><button class="nav-link-btn" data-view="colleges" id="nav-btn-colleges">Colleges</button></li>
+          <li><button class="nav-link-btn" data-view="sources" id="nav-btn-sources">Sources & Verify</button></li>
+          <li><button class="nav-link-btn" data-view="about" id="nav-btn-about">About & Demo</button></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <button class="lang-switch-btn" id="btn-toggle-lang" aria-label="Toggle language between English and Telugu" title="Switch Language">
+          <span id="lang-current-label">తెలుగు</span>
+        </button>
+
+        <!-- Clear Data -->
+        <button class="btn-clear-data" id="btn-clear-storage" title="Erase stored questionnaire answers and personal roadmaps from this device">
+          <span id="txt-btn-clear">Reset Data</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-nav-toggle" id="btn-mobile-menu" aria-label="Open mobile navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Shell -->
+  <main class="main-content" id="main-app" role="main">
+    <div class="container">
+
+      <!-- ===================================================================
+           VIEW 1: HOME
+           =================================================================== -->
+      <section class="view-section active" id="view-home">
+        <!-- Hero Banner -->
+        <div class="hero-wrapper">
+          <div class="hero-pill">
+            <span class="badge badge-primary" id="home-badge">Student Guidance Initiative • India</span>
+          </div>
+          <h1 class="hero-title" id="home-hero-title">What should you study after Class 10?</h1>
+          <p class="hero-subtitle" id="home-hero-subtitle">
+            Every year, millions of 15-year-old students in India face this crucial question. Discover Intermediate streams (MPC, BiPC, CEC, MEC, Arts), 3-year Polytechnic Diplomas, ITI skilled trades, and recognized integrated pathways tailored to your interests and situation.
+          </p>
+          <div class="hero-cta-group">
+            <button class="btn btn-primary" id="btn-home-start-quiz">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+              <span id="txt-cta-start">Answer Student Questions</span>
+            </button>
+            <button class="btn btn-secondary" id="btn-home-explore-all">
+              <span id="txt-cta-explore">Browse All Pathways</span>
+            </button>
+            <button class="btn btn-accent" id="btn-home-quick-demo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+              <span id="txt-cta-demo">Demo Student Journey</span>
+            </button>
+          </div>
+
+          <!-- Non-commercial Guidance Disclaimer -->
+          <div class="disclaimer-banner" role="note">
+            <div class="disclaimer-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <p class="disclaimer-text" id="home-disclaimer-text">
+              Guidance Disclaimer: This is an educational discovery portal. It does not guarantee college admission, placements, or specific salaries. Information serves as supportive guidance for students, parents, and teachers.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1-Click Presentation Personas -->
+        <div class="demo-personas-section">
+          <div class="demo-header">
+            <span class="badge badge-secondary">School & Classroom Presentation Mode</span>
+            <h3 id="txt-demo-heading">Experience the Complete Journey in 1-Click</h3>
+            <p id="txt-demo-subheading">Presenting this project? Click any sample student profile below to instantly simulate their responses, view tailored recommendations, and explore interactive roadmaps without typing answers:</p>
+          </div>
+          <div class="demo-cards-grid">
+            <div class="persona-card">
+              <div>
+                <span class="persona-badge">Persona 1 • Tech & Degree</span>
+                <h4 class="persona-name">Ananya</h4>
+                <p class="persona-desc">High academic comfort, loves maths & coding, ready for 4-5 years study and competitive entrance exams.</p>
+              </div>
+              <button class="btn btn-outline btn-sm persona-trigger-btn" data-persona="ananya">Load Ananya's Journey →</button>
+            </div>
+            <div class="persona-card">
+              <div>
+                <span class="persona-badge">Persona 2 • Practical & Early Job</span>
+                <h4 class="persona-name">Kiran</h4>
+                <p class="persona-desc">Enjoys machines and workshop tools, seeks affordable government seats, wants to start earning in 1-3 years.</p>
+              </div>
+              <button class="btn btn-outline btn-sm persona-trigger-btn" data-persona="kiran">Load Kiran's Journey →</button>
+            </div>
+            <div class="persona-card">
+              <div>
+                <span class="persona-badge">Persona 3 • Business & Commerce</span>
+                <h4 class="persona-name">Bhavana</h4>
+                <p class="persona-desc">Fascinated by finance, economics, leadership, and public policy; prefers balanced 3-4 year degree route.</p>
+              </div>
+              <button class="btn btn-outline btn-sm persona-trigger-btn" data-persona="bhavana">Load Bhavana's Journey →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Features Section -->
+        <div class="features-section">
+          <div class="section-title-wrapper">
+            <h2 class="section-title" id="home-how-title">How Pathway After 10 Helps You</h2>
+            <p class="section-subtitle" id="home-how-subtitle">Designed to remove anxiety, broaden horizons, and provide clear information on all Indian educational paths.</p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              </div>
+              <h3 id="txt-feat1-title">Interest-Driven Quiz</h3>
+              <p id="txt-feat1-desc">8 gentle, optional questions about favorite subjects, work style, budget, and future goals. No sensitive data collected.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </div>
+              <h3 id="txt-feat2-title">Actionable Roadmaps</h3>
+              <p id="txt-feat2-desc">Interactive step-by-step career journeys showing Class 10 → Higher Secondary/Diploma → Entrance/Counselling → Degree/Job.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <h3 id="txt-feat3-title">Side-by-Side Comparison</h3>
+              <p id="txt-feat3-desc">Compare fees, study duration, entry exams, and career timelines clearly so you make informed, confident choices.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+              </div>
+              <h3 id="txt-feat4-title">Official Verification Guide</h3>
+              <p id="txt-feat4-desc">Direct links to state boards, AICTE, NCVT, and step-by-step instructions on how to avoid unaccredited institutions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Working Flow Visualizer -->
+        <div class="flow-explainer">
+          <h3 class="flow-title">The Complete Student Flow</h3>
+          <div class="flow-steps-row">
+            <div class="flow-step-item"><span>1. Home</span></div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step-item"><span>2. Questions</span></div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step-item"><span>3. Recommendations</span></div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step-item"><span>4. Path Details</span></div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step-item"><span>5. Compare</span></div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step-item"><span>6. Roadmap</span></div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step-item"><span>7. Next Actions</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           VIEW 2: STUDENT QUESTIONS (QUIZ)
+           =================================================================== -->
+      <section class="view-section" id="view-quiz">
+        <div class="quiz-wrapper">
+          <div class="quiz-card">
+            <!-- Quiz Meta / Progress -->
+            <div class="quiz-header">
+              <div class="quiz-meta-bar">
+                <span class="quiz-step-counter" id="quiz-step-counter">Question 1 of 8</span>
+                <button class="btn btn-outline btn-sm" id="btn-quiz-start-over">Start Over</button>
+              </div>
+              <div class="progress-track" role="progressbar" aria-valuemin="1" aria-valuemax="8" aria-valuenow="1">
+                <div class="progress-fill" id="quiz-progress-fill" style="width: 12.5%;"></div>
+              </div>
+              <h2 class="quiz-question-title" id="quiz-question-title">Where are you planning to study?</h2>
+              <p class="quiz-question-desc" id="quiz-question-desc">Course names, admission procedures, and fee waivers vary by state.</p>
+            </div>
+
+            <!-- Quiz Options Container -->
+            <div class="quiz-options-list" id="quiz-options-container" role="radiogroup">
+              <!-- Dynamically populated options -->
+            </div>
+
+            <!-- Quiz Footer Controls -->
+            <div class="quiz-footer-actions">
+              <button class="btn btn-secondary" id="btn-quiz-back">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                <span id="txt-quiz-back">Back</span>
+              </button>
+
+              <button class="btn btn-outline btn-sm" id="btn-quiz-skip">
+                <span id="txt-quiz-skip">Skip this question</span>
+              </button>
+
+              <button class="btn btn-primary" id="btn-quiz-continue">
+                <span id="txt-quiz-continue">Continue</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+
+            <!-- Privacy Note -->
+            <div class="quiz-privacy-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span id="txt-quiz-privacy">Your responses remain strictly private inside your browser. No server storage.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           VIEW 3: RECOMMENDATIONS
+           =================================================================== -->
+      <section class="view-section" id="view-recommendations">
+        <div class="recommendations-header">
+          <span class="badge badge-primary">Personalized Guidance</span>
+          <h2 class="section-title" id="txt-recom-heading">Education Pathways Worth Exploring</h2>
+          <p class="section-subtitle" id="txt-recom-subheading">
+            Based on your stated preferences, here are pathways that may suit your interests and circumstances. These serve as guidance starting points for discussion with your family and mentors.
+          </p>
+          <div style="margin-top: 1rem; display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+            <button class="btn btn-secondary btn-sm" id="btn-retake-quiz">Change Answers</button>
+            <button class="btn btn-accent btn-sm" id="btn-go-to-compare">View Compare Table (<span id="compare-count-badge">2</span>)</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Recommendations Grid -->
+        <div class="recommendations-grid" id="recommendations-container">
+          <!-- Populated by recommender engine -->
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           VIEW 4: EXPLORE PATHWAYS
+           =================================================================== -->
+      <section class="view-section" id="view-explore">
+        <div class="section-title-wrapper">
+          <span class="badge badge-primary">Comprehensive Guide</span>
+          <h2 class="section-title" id="txt-explore-heading">Explore All Education Pathways</h2>
+          <p class="section-subtitle" id="txt-explore-subheading">Browse intermediate groups, engineering diplomas, skilled vocational trades, and recognized special routes.</p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="compare-selector-bar" style="margin-bottom: 2rem;">
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;" id="explore-category-tabs">
+            <button class="btn btn-sm btn-primary active-tab" data-cat="all">All Pathways</button>
+            <button class="btn btn-sm btn-secondary" data-cat="intermediate">Intermediate / +2</button>
+            <button class="btn btn-sm btn-secondary" data-cat="polytechnic">Polytechnic / Diploma</button>
+            <button class="btn btn-sm btn-secondary" data-cat="iti">ITI / Trades</button>
+            <button class="btn btn-sm btn-secondary" data-cat="other">Other Recognized Routes</button>
+          </div>
+        </div>
+
+        <!-- All Pathways Grid -->
+        <div class="recommendations-grid" id="all-paths-container">
+          <!-- Dynamically populated cards -->
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           VIEW 5: PATH DETAILS & STEP-BY-STEP ROADMAP
+           =================================================================== -->
+      <section class="view-section" id="view-roadmap">
+        <button class="roadmap-back-btn" id="btn-back-from-roadmap">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          <span id="txt-roadmap-back">Back to previous view</span>
+        </button>
+
+        <!-- Dynamic Path Header Card -->
+        <div class="roadmap-header-card" id="roadmap-path-header">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Personal Roadmap Progress Tracker -->
+        <div class="roadmap-progress-tracker" id="roadmap-tracker-bar">
+          <div class="tracker-text">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span id="txt-tracker-status">Mark steps below as Interested, Need to Research, or Completed to build your personalized plan.</span>
+          </div>
+          <div class="tracker-badges-count" id="tracker-badges-container">
+            <!-- Counts of marked steps -->
+          </div>
+        </div>
+
+        <!-- Vertical Timeline Tree -->
+        <div class="roadmap-timeline-tree" id="roadmap-timeline-container">
+          <!-- Steps populated dynamically -->
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           VIEW 6: COMPARE PATHS
+           =================================================================== -->
+      <section class="view-section" id="view-compare">
+        <div class="compare-container">
+          <div class="section-title-wrapper">
+            <span class="badge badge-primary">Side-by-Side Analysis</span>
+            <h2 class="section-title" id="txt-compare-title">Compare Education Pathways</h2>
+            <p class="section-subtitle" id="txt-compare-desc">Evaluate entry rules, duration, estimated costs, exams, and career directions side-by-side.</p>
+          </div>
+
+          <!-- Selected Pathways Bar -->
+          <div class="compare-selector-bar">
+            <div style="display: flex; flex-direction: column; gap: 0.35rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Selected for comparison (max 3):</span>
+              <div class="compare-chips-list" id="compare-chips-container">
+                <!-- Chips populated by JS -->
+              </div>
+            </div>
+            <button class="btn btn-outline btn-sm" id="btn-add-more-compare">Browse More to Add</button>
+          </div>
+
+          <!-- Comparison Table -->
+          <div class="compare-table-wrapper" id="compare-table-wrapper">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           VIEW 7: COLLEGE AND COURSE EXPLORER
+           =================================================================== -->
+      <section class="view-section" id="view-colleges">
+        <div class="section-title-wrapper">
+          <span class="badge badge-amber" id="badge-college-sample">Sample Educational Directory</span>
+          <h2 class="section-title" id="txt-colleges-title">College & Course Explorer</h2>
+          <p class="section-subtitle" id="txt-colleges-desc">
+            Explore sample institutions across Telangana, Andhra Pradesh, and National bodies. All listings are illustrative sample data for student discovery.
+          </p>
+        </div>
+
+        <!-- Filters Bar -->
+        <div class="college-filters-bar">
+          <div class="search-input-box">
+            <svg class="search-icon-inside" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="input-college-search" placeholder="Search by college name, course, or city...">
+          </div>
+          <select class="filter-select" id="select-filter-state">
+            <option value="all">All States</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="All India / National">All India / National</option>
+          </select>
+          <select class="filter-select" id="select-filter-category">
+            <option value="all">All Course Types</option>
+            <option value="Intermediate / +2">Intermediate / +2</option>
+            <option value="Polytechnic / Diploma">Polytechnic / Diploma</option>
+            <option value="ITI / Vocational">ITI / Vocational</option>
+            <option value="Other Recognized Routes">Other Routes</option>
+          </select>
+          <select class="filter-select" id="select-filter-budget">
+            <option value="all">Any Budget</option>
+            <option value="budget_low">Budget-Friendly (&lt; ₹15k/yr)</option>
+            <option value="budget_med">Moderate (₹15k - ₹60k/yr)</option>
+            <option value="budget_high">Private (&gt; ₹60k/yr)</option>
+          </select>
+        </div>
+
+        <!-- College Cards Grid -->
+        <div class="colleges-grid" id="colleges-grid-container">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           VIEW 8: SOURCES, HOW TO VERIFY & GLOSSARY
+           =================================================================== -->
+      <section class="view-section" id="view-sources">
+        <div class="section-title-wrapper">
+          <span class="badge badge-primary">Official Portals & Verification</span>
+          <h2 class="section-title" id="txt-sources-heading">Official Sources, Verification & Glossary</h2>
+          <p class="section-subtitle" id="txt-sources-subheading">Empower yourself with authentic government portals, 5-step institutional verification, and an educational acronyms glossary.</p>
+        </div>
+
+        <!-- 5-Step Verification Checklist -->
+        <div class="checklist-wrapper">
+          <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;" id="txt-check-heading">5-Step Student & Parent Verification Checklist</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Follow these practical steps before paying application fees or taking admission:</p>
+          <div id="checklist-items-container">
+            <!-- Populated from sources.js -->
+          </div>
+        </div>
+
+        <!-- Official Portals Grid -->
+        <h3 style="font-size: 1.4rem; margin-bottom: 1rem;" id="txt-portals-heading">Official Government & Board Portals</h3>
+        <div class="sources-grid" id="sources-portals-container">
+          <!-- Populated from sources.js -->
+        </div>
+
+        <!-- Responsible Salary Notice -->
+        <div class="disclaimer-banner" style="margin-bottom: 3rem;">
+          <div class="disclaimer-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div>
+            <h4 style="color: #fde68a; margin-bottom: 0.4rem;" id="txt-salary-heading">Responsible Salary Guidance & Caveats</h4>
+            <p class="disclaimer-text" id="txt-salary-caveats">
+              Broad salary figures are directional estimates based on published reports. Actual earnings depend on geographic location, individual technical mastery, employer scale, and economic demand. Education is an empowering long-term foundation, not a guaranteed transactional ticket.
+            </p>
+          </div>
+        </div>
+
+        <!-- Glossary of Educational Terms -->
+        <div class="glossary-wrapper">
+          <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;" id="txt-glossary-heading">Educational Acronyms & Terms Glossary</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">Quick explanations of Indian stream names, exams, and governing councils:</p>
+          <div class="glossary-search-box">
+            <input type="text" id="input-glossary-search" class="filter-select" style="width: 100%;" placeholder="Filter terms (e.g. MPC, PolyCET, Lateral Entry, NCVT)...">
+          </div>
+          <div class="glossary-grid" id="glossary-grid-container">
+            <!-- Populated from glossary.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           VIEW 9: ABOUT & PRESENTATION GUIDE
+           =================================================================== -->
+      <section class="view-section" id="view-about">
+        <div class="section-title-wrapper">
+          <span class="badge badge-secondary">School Presentation Documentation</span>
+          <h2 class="section-title" id="txt-about-title">About Pathway After 10</h2>
+          <p class="section-subtitle" id="txt-about-subtitle">Project documentation, architecture, ethical principles, and presentation guide for teachers and evaluators.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem; margin-bottom: 3rem;">
+          <div class="feature-card">
+            <h3 id="txt-about-p1-title">The Problem We Solve</h3>
+            <p id="txt-about-p1-text">
+              In India, Class 10 board exams represent the very first major academic fork in a student's life. Lack of clear, unbiased information causes immense stress, resulting in students selecting unsuitable streams or falling victim to misleading private coaching claims. Pathway After 10 provides transparent, supportive, non-commercial guidance.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3 id="txt-about-p2-title">Technical Architecture</h3>
+            <p id="txt-about-p2-text">
+              Engineered with pure semantic HTML5, modern vanilla CSS3 design systems, and responsive vanilla ES modules. Zero server telemetry ensures 100% student privacy with browser localStorage. Can run on any static web host or locally without external build tools.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3 id="txt-about-p3-title">Ethical Principles</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; color: var(--text-secondary); font-size: 0.92rem;">
+              <li>✓ No admission or salary guarantees: All figures are labeled as broad estimates.</li>
+              <li>✓ Non-judgmental guidance: Marks are optional; ITI, polytechnic, and vocational trades are presented with equal dignity.</li>
+              <li>✓ Complete privacy: No personal details transmitted to any server.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Presentation Walkthrough Box -->
+        <div class="demo-personas-section">
+          <h3 style="font-size: 1.4rem; margin-bottom: 1rem;" id="txt-presentation-walkthrough">Step-by-Step Presentation Script for Evaluators</h3>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div class="checklist-step-item">
+              <div class="checklist-num">1</div>
+              <div class="checklist-content">
+                <h4>Introduction & Problem Statement</h4>
+                <p>Start on the Home page. Explain why Class 10 students in India face tremendous confusion and how this portal gives them unbiased clarity across Intermediate, Polytechnic, and ITI options.</p>
+              </div>
+            </div>
+            <div class="checklist-step-item">
+              <div class="checklist-num">2</div>
+              <div class="checklist-content">
+                <h4>Demonstrate the 1-Click Persona Flow</h4>
+                <p>Click on one of the sample personas (e.g., 'Kiran' for practical skills or 'Ananya' for tech). Show how the 8 questions automatically populate, compute alignment scores, and present 4 tailored recommendations.</p>
+              </div>
+            </div>
+            <div class="checklist-step-item">
+              <div class="checklist-num">3</div>
+              <div class="checklist-content">
+                <h4>Interactive Roadmap & Personalized Marking</h4>
+                <p>Click 'View Step-by-Step Roadmap' on a recommended path. Demonstrate expanding milestones and clicking 'Interested' or 'Need to research'. Highlight how personal roadmap progress updates instantly.</p>
+              </div>
+            </div>
+            <div class="checklist-step-item">
+              <div class="checklist-num">4</div>
+              <div class="checklist-content">
+                <h4>Side-by-Side Comparison & Telugu Switch</h4>
+                <p>Open the Compare tool to contrast Intermediate MPC with a 3-Year Polytechnic Diploma. Then toggle the 'తెలుగు' language switch in the header to demonstrate regional language inclusivity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Institution Detail Modal -->
+  <div class="modal-overlay" id="college-modal" role="dialog" aria-modal="true" aria-labelledby="modal-college-title">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="btn-close-modal" aria-label="Close modal">✕</button>
+      <div id="modal-college-body">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="app-toast" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <span id="toast-message">Notification message</span>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 id="txt-footer-title">Pathway After 10</h4>
+          <p style="font-size: 0.88rem; max-width: 360px; line-height: 1.6;" id="txt-footer-desc">
+            An open educational guidance project empowering students, parents, and teachers across India with transparent pathways after Class 10.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home" data-view="home">Home</a></li>
+            <li><a href="#quiz" data-view="quiz">Student Questions</a></li>
+            <li><a href="#explore" data-view="explore">Explore Pathways</a></li>
+            <li><a href="#compare" data-view="compare">Compare Paths</a></li>
+            <li><a href="#colleges" data-view="colleges">College Explorer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Verification & Transparency</h4>
+          <ul>
+            <li><a href="#sources" data-view="sources">Official Portals</a></li>
+            <li><a href="#sources" data-view="sources">Verification Checklist</a></li>
+            <li><a href="#sources" data-view="sources">Acronyms Glossary</a></li>
+            <li><a href="#about" data-view="about">Presentation Guide</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Pathway After 10 Initiative. Student guidance project. Non-commercial, unbiased information.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Controller ES Module -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
